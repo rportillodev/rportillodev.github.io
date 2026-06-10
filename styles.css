@@ -251,11 +251,7 @@ h3 {
 }
 
 .profile-image-wrapper {
-  position: relative;
-  padding: 14px;
-  background:
-    radial-gradient(circle at top, rgba(90, 167, 255, 0.18), transparent 42%),
-    rgba(255, 255, 255, 0.035);
+  padding: 14px 14px 0;
 }
 
 .profile-image {
@@ -270,62 +266,35 @@ h3 {
 }
 
 .profile-card-content {
-  padding: 26px;
+  padding: 24px;
 }
 
-.status-row {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+.profile-card-content h2 {
+  margin: 0 0 12px;
+  font-size: 1.65rem;
+  line-height: 1.1;
+  letter-spacing: -0.04em;
+}
+
+.profile-card-content p {
+  margin: 0;
   color: var(--text-muted);
-  font-size: 0.86rem;
-  font-weight: 700;
-  margin-bottom: 18px;
-}
-
-.status-indicator {
-  width: 10px;
-  height: 10px;
-  flex: 0 0 auto;
-  border-radius: 999px;
-  background: #4ade80;
-  box-shadow: 0 0 0 8px rgba(74, 222, 128, 0.12);
-}
-
-.hero-profile-card h2 {
-  font-size: 1.7rem;
-}
-
-.hero-profile-card p {
-  color: var(--text-muted);
-}
-
-.status-indicator {
-  width: 12px;
-  height: 12px;
-  border-radius: 999px;
-  background: #4ade80;
-  box-shadow: 0 0 0 8px rgba(74, 222, 128, 0.12);
-  margin-bottom: 20px;
-}
-
-.hero-card h2 {
-  font-size: 1.6rem;
-}
-
-.hero-card p {
-  color: var(--text-muted);
+  font-size: 0.98rem;
 }
 
 .summary-list {
   display: grid;
-  gap: 16px;
-  margin-top: 26px;
+  gap: 0;
+  margin-top: 24px;
 }
 
 .summary-list div {
-  padding-top: 16px;
+  padding: 16px 0;
   border-top: 1px solid var(--border);
+}
+
+.summary-list div:last-child {
+  padding-bottom: 0;
 }
 
 .summary-list strong,
@@ -334,14 +303,16 @@ h3 {
 }
 
 .summary-list strong {
-  font-size: 0.85rem;
+  margin-bottom: 6px;
   color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 800;
 }
 
 .summary-list span {
-  margin-top: 4px;
   color: var(--text-muted);
   font-size: 0.94rem;
+  line-height: 1.5;
 }
 
 .section {
