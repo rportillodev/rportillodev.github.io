@@ -4,14 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#f5f3ed" />
-    <meta name="description" content="Rudy Portillo builds practical software informed by experience in support and operations. Explore Finanzas SV, a bilingual installment calculator." />
+    <meta name="description" content="Rudy Portillo is pursuing junior software development roles, with software QA as a second focus. Explore published projects, source code, and testing decisions." />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Rudy Portillo — Software & Operations" />
-    <meta property="og:description" content="Small, useful applications built from real operational problems. View my work and the source behind it." />
+    <meta property="og:title" content="Rudy Portillo — Junior Software Development & QA" />
+    <meta property="og:description" content="Practical software, clear business logic, and testing. Explore Finanzas SV and the code behind it." />
     <meta property="og:url" content="https://rportillodev.github.io/" />
     <meta property="og:image" content="https://rportillodev.github.io/assets/profile-photo.jpg" />
-    <title>Rudy Portillo — Software & Operations</title>
+    <title>Rudy Portillo — Junior Software Development & QA</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="positioning.css" />
   </head>
   <body>
     <a class="skip-link" href="#main">Skip to content</a>
@@ -33,19 +34,23 @@
           <div class="hero-copy">
             <p class="overline"><span class="small-square" aria-hidden="true"></span> Rudy Portillo / Developer portfolio</p>
             <h1 id="hero-title">From operations<br />to <em>working software.</em></h1>
-            <p class="hero-description">I build straightforward web tools informed by real problems I've seen in client support, business workflows, and everyday life.</p>
+            <p class="hero-description">I'm pursuing junior software development roles, with software QA as a second focus. I build applications, investigate bugs, and test whether code behaves as intended.</p>
+            <div class="career-priorities" aria-label="Career focus">
+              <div><span class="career-number">01 / Primary focus</span><strong>Junior software development</strong></div>
+              <div><span class="career-number">02 / Secondary focus</span><strong>Software QA</strong></div>
+            </div>
             <div class="hero-links">
-              <a class="text-link prominent" href="#work">See the work <span aria-hidden="true">↘</span></a>
+              <a class="text-link prominent" href="#work">See the project <span aria-hidden="true">↘</span></a>
               <a class="text-link" href="https://github.com/rportillodev" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
             </div>
           </div>
           <figure class="portrait">
             <img src="assets/profile-photo.jpg" alt="Portrait of Rudy Portillo" width="520" height="620" />
-            <figcaption><span>Rudy Portillo</span><span>Software / Operations</span></figcaption>
+            <figcaption><span>Rudy Portillo</span><span>Development / Testing</span></figcaption>
           </figure>
         </div>
         <div class="wrap hero-footnote">
-          <span>Currently building & publishing small, tested applications.</span>
+          <span>Building software, learning the fundamentals, and documenting the work.</span>
           <span>Scroll to explore <span aria-hidden="true">↓</span></span>
         </div>
       </section>
@@ -54,24 +59,24 @@
         <div class="wrap">
           <div class="section-heading">
             <p class="overline">01 / Selected work</p>
-            <h2 id="work-title">One release.<br /><em>Real decisions.</em></h2>
-            <p>I'm keeping this page focused on work that is available to use and review. More projects will be added when they're ready.</p>
+            <h2 id="work-title">Built, tested,<br /><em>and deployed.</em></h2>
+            <p>One published application with a live demo, readable source code, and testable behavior. I'll add more projects when they are ready to review.</p>
           </div>
 
           <article class="featured-project" aria-labelledby="project-title">
             <div class="project-main">
               <div class="project-topline">
                 <span><span class="live-dot" aria-hidden="true"></span> Live project</span>
-                <span>2026 / Web application</span>
+                <span>2026 / JavaScript application</span>
               </div>
               <div class="project-copy">
                 <p class="project-index">Project 001</p>
                 <h3 id="project-title">Finanzas SV</h3>
-                <p>A bilingual calculator that makes the actual cost of interest-free installment purchases easier to understand.</p>
+                <p>A bilingual installment calculator with integer-cent calculations, form validation, and automated tests. Built and deployed with JavaScript and Vite.</p>
               </div>
               <div class="project-actions">
-                <a href="https://rportillodev.github.io/finanzas-sv/" target="_blank" rel="noopener noreferrer">Try the application <span aria-hidden="true">↗</span></a>
-                <a href="https://github.com/rportillodev/finanzas-sv" target="_blank" rel="noopener noreferrer">Read the code <span aria-hidden="true">↗</span></a>
+                <a href="https://rportillodev.github.io/finanzas-sv/" target="_blank" rel="noopener noreferrer">Open live application <span aria-hidden="true">↗</span></a>
+                <a href="https://github.com/rportillodev/finanzas-sv" target="_blank" rel="noopener noreferrer">Examine source code <span aria-hidden="true">↗</span></a>
               </div>
             </div>
             <div class="project-example">
@@ -96,16 +101,16 @@
 
           <div class="project-notes">
             <div>
-              <h4>Problem</h4>
-              <p>“0% interest” doesn't tell the full story when a purchase has a down payment or an additional fee.</p>
+              <h4>Problem &amp; logic</h4>
+              <p>Model installment purchases with down payments and upfront fees, while distributing rounding remainders in integer cents.</p>
             </div>
             <div>
               <h4>Implementation</h4>
-              <p>Vanilla JavaScript, bilingual content, input validation, and calculations performed in integer cents.</p>
+              <p>Separate financial functions from the interface, validate inputs, and display translated results in Spanish and English.</p>
             </div>
             <div>
-              <h4>Quality</h4>
-              <p>Automated calculation and translation tests, with builds and deployment handled through GitHub Actions.</p>
+              <h4>Testing &amp; delivery</h4>
+              <p>Automated calculation and translation checks, browser testing, and a CI workflow that builds and deploys through GitHub Actions.</p>
             </div>
           </div>
         </div>
@@ -115,12 +120,13 @@
         <div class="wrap about-grid">
           <div>
             <p class="overline">02 / Background</p>
-            <h2 id="about-title">A practical starting point.</h2>
+            <h2 id="about-title">Why I approach software this way.</h2>
           </div>
           <div class="about-body">
-            <p>My background is in client support and operational workflows. I've worked with the kind of systems where clarity matters: tracking requests, keeping information accurate, and helping people get unstuck.</p>
-            <p>I'm applying that perspective to software development—focusing on understandable code, useful behavior, and testing instead of adding features just to fill a page.</p>
-            <div class="tools-line"><span>Working with</span><p>JavaScript · HTML/CSS · SQL · Python · C# · Git</p></div>
+            <p>My background is in SaaS support and client operations. It taught me how to investigate problems, communicate clearly, and understand how software affects real workflows.</p>
+            <p>I'm extending that experience through software development. My first goal is a junior developer role where I can write, debug, and maintain code. Software QA is my second path because testing is part of how I build and learn.</p>
+            <div class="tools-line"><span>Used in published work</span><p>JavaScript · HTML/CSS · Vite · Git · Node.js tests · GitHub Actions</p></div>
+            <div class="tools-line learning-line"><span>Currently learning</span><p>SQL · REST APIs · Backend fundamentals</p></div>
           </div>
         </div>
       </section>
@@ -129,10 +135,10 @@
         <div class="wrap contact-grid">
           <div>
             <p class="overline">03 / Contact</p>
-            <h2 id="contact-title">Let's get in touch.</h2>
+            <h2 id="contact-title">Get in touch.</h2>
           </div>
           <div class="contact-body">
-            <p>I'm interested in software development and technical roles where product thinking and operational experience meet.</p>
+            <p>I'm looking for junior software development roles and, secondarily, software testing positions. Based in El Salvador and open to remote opportunities.</p>
             <a class="email-link" href="mailto:rudy.careers@pm.me">rudy.careers@pm.me <span aria-hidden="true">↗</span></a>
             <div class="contact-socials">
               <a href="https://github.com/rportillodev" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
